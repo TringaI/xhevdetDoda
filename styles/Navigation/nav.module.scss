@@ -1,0 +1,98 @@
+@import '../vars.module.scss';
+
+.nav{
+    width: 90%;
+}
+.nav_container{
+    position: fixed;
+    padding: 20px 0px;
+    z-index: 99;
+    transition: 0.3s;
+    top: 40px;
+}
+
+.logo{
+    // width: 80px;
+    margin-left: 20px;
+    transition: 0.5s ease-in-out;
+    height: auto;
+}
+.brand_container{
+    width: 50%;
+}
+.profile_link{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.brand_heading{
+    font-size: 23px;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.nav_link{
+    font-size: 16px;
+    margin: 0px 30px;
+    font-weight: 500;
+}
+.links_container{
+    width: 50%;
+}
+.button_container{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .links_container{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        margin-top: 80px;
+        justify-content: start;
+        flex-direction: column;
+        padding-left: 20px;
+        transition: 0.3s;
+    }
+    .sidebar_open{
+        left: 0%;
+    }
+    .sidebar_closed{
+        left: -100%;
+    }
+    .nav_link{
+        margin: 40px;
+        font-size: 17px;
+        margin-left: 0px;
+    }
+    .nav{
+        width: 100%;
+        
+    }
+    .brand_container{
+        padding-left: 20px;
+        width: 100%;
+    }
+
+
+    .toggle_top_dec{
+        width: 80%;
+        border: 0px solid transparent;
+        height: 3px;
+        transition: 0.3s;
+        border-radius: 20px;
+        position: relative;
+    }
+    .toggle_bottom_dec{
+        width: 60%;
+        border: 0px solid transparent;
+        transition: 0.3s;
+        height: 3px;
+        border-radius: 20px;
+    }
+    .button_container{
+        display: flex;
+    }
+}

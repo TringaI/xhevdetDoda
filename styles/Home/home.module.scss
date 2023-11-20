@@ -1,0 +1,45 @@
+
+
+@import './home_res.module.scss';
+
+
+//about
+#carosel_container{
+    background-image: url('/pictures/gallery/g46.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.circles{
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+.filled{
+    background-color: white;
+}
+
+
+//fixed dec
+.fixed_dec_container{
+    background-image: url('/pictures/gallery/ndermjetesimi.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.804);
+    background-blend-mode: multiply;
+}
+
+
+//contact
+.contact_inputs{
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+#message{
+    height: 100px;
+}
