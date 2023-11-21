@@ -5,6 +5,9 @@ function Index() {
   return (
     <div className='w-full flex justify-center items-center'>
       <div className='w-[90%] flex flex-col justify-center items center mt-40'>
+        <div className="w-full fle">
+
+        </div>
         {activities_data.map((data, i) => (
           <div key={i} className="activity_container w-full flex flex-col mb-20 ">
             {/* activity title */}
